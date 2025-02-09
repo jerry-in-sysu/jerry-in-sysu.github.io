@@ -1698,9 +1698,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>`+
+        `<span class="kill-c">微軟已經於2016年終止了對 Internet Explorer (IE) 10 及更早版本的支持，<br/>繼續使用存在極大的安全隱患，請使用當代主流的瀏覽器進行訪問。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解詳情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1728,9 +1728,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>
+        <span class="kill-c">本頁面需要瀏覽器支持（啟用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解詳情 ></strong></a>
     </div>
 </noscript>
 
@@ -2112,7 +2112,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1739111291925),
+    lastupdate: new Date(1739111754584),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2150,8 +2150,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     languages: {
       
         search: {
-          hits_empty: "找不到您查询的内容：${query}",
-          hits_stats: "找到 ${hits} 条结果，用时 ${time} 毫秒",
+          hits_empty: "找不到您查詢的內容：${query}",
+          hits_stats: "找到 ${hits} 條結果，用時 ${time} 毫秒",
         }
       
     }
@@ -2485,10 +2485,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">├── app01</span><br><span class="line">|   ├── __init__.py		</span><br><span class="line">|	├── admin.py	【固定，不用动】django默认提供后台管理</span><br><span class="line">|	├── apps.py		【固定，不用动】app启动类</span><br><span class="line">|	├── migrations	【固定，不用动】数据库变更记录</span><br><span class="line">|	|	└── __init__.py</span><br><span class="line">|	├── models.py	【重要】对数据库进行操作</span><br><span class="line">|	├── tests.py	【固定，不用动】单元测试</span><br><span class="line">|	├── views.py	【重要】函数</span><br></pre></td></tr></table></figure>
 
 <h5 id="2-项目启动"><a href="#2-项目启动" class="headerlink" title="2.项目启动"></a>2.项目启动</h5><p>首先，我们刚刚创建了一个app，然后我们现在需要对其进行注册，这样才可以使用它（setting.py）：</p>
-<style>.cnragdfayexg{}</style><img src="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/1.png" class="lazyload" data-srcset="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="cnragdfayexg lazyload" alt="1">
+<style>.lgcpjqmbferh{}</style><img src="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/1.png" class="lazyload" data-srcset="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lgcpjqmbferh lazyload" alt="1">
 
 <p>对应添加的名称可以到对应的app文件夹中的<code>apps.py</code>文件中去查看：</p>
-<style>.qvhjqgmoqfyh{}</style><img src="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/2.png" class="lazyload" data-srcset="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="qvhjqgmoqfyh lazyload" alt="2">
+<style>.nobwudmjkyeo{}</style><img src="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/2.png" class="lazyload" data-srcset="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="nobwudmjkyeo lazyload" alt="2">
 
 <p>其次，我们需要到<code>urls.py</code>文件中去编写对应的响应函数：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.contrib <span class="keyword">import</span> admin</span><br><span class="line"><span class="keyword">from</span> django.urls <span class="keyword">import</span> path</span><br><span class="line"><span class="keyword">from</span> app01 <span class="keyword">import</span> views <span class="comment"># 引用app中编写好的函数</span></span><br><span class="line">urlpatterns = [</span><br><span class="line">    <span class="comment">#path(&#x27;admin/&#x27;, admin.site.urls),</span></span><br><span class="line">    path(<span class="string">&#x27;index/&#x27;</span>,views.index), <span class="comment"># 前面的一部分是路径，而后面一部分就是对应的函数</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
@@ -2710,14 +2710,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+        <div><p>博客內容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW">姓名標示-非商業性-相同方式分享 4.0 國際 (CC BY-NC-SA 4.0) 協議</a></p>
 </div>
       
     
       
         本站使用
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.1" target="_blank" class="codename">Volantis</a>
-        作为主题
+        作為主題
       
     
       
