@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/tags/复习/"/>
+  
+  <link rel="canonical" href="http://example.com/2025/02/09/django学习笔记1/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,17 +33,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：复习 - Jerry's Blog</title>
+  <title>Jerry's Blog</title>
   <meta name="keywords" content="生活,技术,学习,分享">
   <meta desc name="description" content="欢迎访问jerry的博客 - Jerry - Jerry's Blog">
   
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Jerry&#39;s Blog">
-<meta property="og:url" content="http://example.com/tags/%E5%A4%8D%E4%B9%A0/index.html">
+<meta property="og:url" content="http://example.com/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
-<meta property="og:description" content="欢迎访问jerry的博客">
+<meta property="og:description" content="Django学习笔记一1.项目创建当我们将python文件夹中的scripts目录放进我们系统的环境变量时，我们在终端使用以下命令来创建Django项目： 1django-admin startproject project_name  启动完对应项目后，这个启动程序会为我们初始化项目中所包含的文件： 1234567├── manage.py 		【一般用于项目管理、启动项目、创建app、数据管理">
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2025-02-09T07:59:47.102Z">
+<meta property="article:modified_time" content="2025-02-09T12:43:05.578Z">
 <meta property="article:author" content="Jerry">
 <meta property="article:tag" content="生活,技术,学习,分享">
 <meta name="twitter:card" content="summary">
@@ -2439,25 +2441,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="https://schema.org.cn/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/09/学习资料/">
+  <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/09/django学习笔记1/">
   <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
     <meta itemprop="name" content="Jerry's Blog">
   </span>
@@ -2466,61 +2452,193 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="欢迎访问jerry的博客">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/02/09/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/"  itemprop="url">
-        学习资料
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        同样是保密管理专业的uu们，你们好呀！在大三的寒假里，我利用空闲时间整理了我上大学至今的所有资料供大家参考，里面有许多一手的复习资料，相信能够对大家在复习时产生较大的帮助。那就有人会问了：那我要怎么去找到对应的仓库呢？这里一共有两种方法：
-
-第一，大家可以点击我博客中的“源码”就可以直接跳转到我的github仓库。
-第二，大家也可以直接在github中搜索“保密管理”这个关键词，然后筛选的时...
-      
+    
+      <span hidden itemprop="name headline">
+        
+      </span>
     
   </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h4 id="Django学习笔记一"><a href="#Django学习笔记一" class="headerlink" title="Django学习笔记一"></a>Django学习笔记一</h4><h5 id="1-项目创建"><a href="#1-项目创建" class="headerlink" title="1.项目创建"></a>1.项目创建</h5><p>当我们将python文件夹中的scripts目录放进我们系统的环境变量时，我们在终端使用以下命令来创建Django项目：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">django-admin startproject project_name</span><br></pre></td></tr></table></figure>
+
+<p>启动完对应项目后，这个启动程序会为我们初始化项目中所包含的文件：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">├── manage.py 		【一般用于项目管理、启动项目、创建app、数据管理】【不用修改】【常用】</span><br><span class="line">└── test1</span><br><span class="line">    ├── __init__.py</span><br><span class="line">    ├── settings.py	【项目配置文件（可以用于链接数据库……）】【常常修改】</span><br><span class="line">    ├── urls.py     【URL和函数的对应关系】【常常修改】</span><br><span class="line">    ├── asgi.py		【接收网络请求（异步）】【不用修改】</span><br><span class="line">    └── wsgi.py		【接收网络请求（同步）】【不用修改】</span><br></pre></td></tr></table></figure>
+
+<p>生成app（这个并不是手机上的应用，而是用于管理项目的一部分）：可是创建多个app来管理项目的特定部分，但是用于一般开发而言，我们一般仅仅使用<strong>一个</strong>来管理就足够了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py startapp app_name</span><br></pre></td></tr></table></figure>
+
+<p>通过以上指令就可以生成一个app了，其中结构如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">├── app01</span><br><span class="line">|   ├── __init__.py		</span><br><span class="line">|	├── admin.py	【固定，不用动】django默认提供后台管理</span><br><span class="line">|	├── apps.py		【固定，不用动】app启动类</span><br><span class="line">|	├── migrations	【固定，不用动】数据库变更记录</span><br><span class="line">|	|	└── __init__.py</span><br><span class="line">|	├── models.py	【重要】对数据库进行操作</span><br><span class="line">|	├── tests.py	【固定，不用动】单元测试</span><br><span class="line">|	├── views.py	【重要】函数</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-项目启动"><a href="#2-项目启动" class="headerlink" title="2.项目启动"></a>2.项目启动</h5><p>首先，我们刚刚创建了一个app，然后我们现在需要对其进行注册，这样才可以使用它（setting.py）：</p>
+<style>.hmnmmmtjjyni{}</style><img src="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/1.png" class="lazyload" data-srcset="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="hmnmmmtjjyni lazyload" alt="1">
+
+<p>对应添加的名称可以到对应的app文件夹中的<code>apps.py</code>文件中去查看：</p>
+<style>.iwrtegyhtpuw{}</style><img src="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/2.png" class="lazyload" data-srcset="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="iwrtegyhtpuw lazyload" alt="2">
+
+<p>其次，我们需要到<code>urls.py</code>文件中去编写对应的响应函数：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.contrib <span class="keyword">import</span> admin</span><br><span class="line"><span class="keyword">from</span> django.urls <span class="keyword">import</span> path</span><br><span class="line"><span class="keyword">from</span> app01 <span class="keyword">import</span> views <span class="comment"># 引用app中编写好的函数</span></span><br><span class="line">urlpatterns = [</span><br><span class="line">    <span class="comment">#path(&#x27;admin/&#x27;, admin.site.urls),</span></span><br><span class="line">    path(<span class="string">&#x27;index/&#x27;</span>,views.index), <span class="comment"># 前面的一部分是路径，而后面一部分就是对应的函数</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<p>紧接着，我们再到<code>views.py</code>文件中去完善响应函数的内容：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.shortcuts <span class="keyword">import</span> render</span><br><span class="line"><span class="keyword">from</span> django.http <span class="keyword">import</span> HttpResponse</span><br><span class="line"><span class="comment"># Create your views here.</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">index</span>(<span class="params">request</span>): 		<span class="comment"># 其中，request是默认参数，然后就实现了一个简单函数</span></span><br><span class="line">    <span class="keyword">return</span> HttpResponse(<span class="string">&quot;欢迎使用&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>最后，我们在终端中使用如下命令便可以启动服务：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py runserver</span><br></pre></td></tr></table></figure>
+
+<p>经过以上操作，我们便完成了一个项目的启动。</p>
+
+  </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-02-09T12:13:06+08:00">2025-02-09</time>
-        
-      </div>
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2025/02/09/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-02-09T20:43:05+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Feb 9, 2025</p>
+  </a>
 </div>
 
-          </div>
         
       
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
-  </section>
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/&title= - Jerry's Blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/&title= - Jerry's Blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/&title= - Jerry's Blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
-    
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2025/02/09/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/'>
+          <p class='title'>学习资料<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>同样是保密管理专业的uu们，你们好呀！在大三的寒假里，我利用空闲时间整理了我上大学至今的所有资料供大家参考，里面有许多一手的复习资料，相信能够对大家在复习时产生较大的帮助。那就有人会问了：那我要...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-  
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="https://schema.org.cn/WPSideBar">
   
@@ -2529,107 +2647,31 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile ">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Jerry's Blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/%E5%A4%8D%E4%B9%A0/" style="font-size: 14px; color: #999">复习</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80"><span class="toc-text">Django学习笔记一</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA"><span class="toc-text">1.项目创建</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8"><span class="toc-text">2.项目启动</span></a></li></ol></li></ol>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -2637,6 +2679,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <!-- Custom Files side end -->
 </aside>
+
 
 
         </div>
@@ -3118,7 +3161,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"Jerry's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"Jerry","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"欢迎访问jerry的博客"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Jerry's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/tags/复习/","name":"复习"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"Jerry's Blog","url":"http://example.com/","keywords":"生活,技术,学习,分享","description":"欢迎访问jerry的博客","author":{"@type":"Person","name":"Jerry","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"欢迎访问jerry的博客"},"publisher":{"@type":"Organization","name":"Jerry's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"欢迎访问jerry的博客","inLanguage":"zn","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Jerry","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Jerry's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"Jerry's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"Jerry","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"欢迎访问jerry的博客"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Jerry's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/02/09/django学习笔记1/"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"Jerry's Blog","url":"http://example.com/","keywords":"生活,技术,学习,分享","description":"欢迎访问jerry的博客","author":{"@type":"Person","name":"Jerry","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"欢迎访问jerry的博客"},"publisher":{"@type":"Organization","name":"Jerry's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"欢迎访问jerry的博客","inLanguage":"zn","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/"},"author":{"@type":"Person","name":"Jerry","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Jerry's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/","wordCount":0,"datePublished":"2025-02-09T07:59:47.102Z","dateModified":"2025-02-09T12:43:05.578Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
