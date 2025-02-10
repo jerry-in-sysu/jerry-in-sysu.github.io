@@ -1745,9 +1745,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1775,9 +1775,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -1792,7 +1792,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1739192963988),
+    lastupdate: new Date(1739199914381),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","lastupdate","webinfo"],
       for_post: ["toc"],
@@ -2650,13 +2650,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：615 字</p>
+      <p>615 words</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：2 分钟</p>
+      <p>2 min</p>
     </a>
   </div>
 
@@ -2689,10 +2689,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">├── app01</span><br><span class="line">|   ├── __init__.py</span><br><span class="line">|	├── admin.py	【固定，不用动】django默认提供后台管理</span><br><span class="line">|	├── apps.py		【固定，不用动】app启动类</span><br><span class="line">|	├── migrations	【固定，不用动】数据库变更记录</span><br><span class="line">|	|	└── __init__.py</span><br><span class="line">|	├── models.py	【重要】对数据库进行操作</span><br><span class="line">|	├── tests.py	【固定，不用动】单元测试</span><br><span class="line">|	├── views.py	【重要】函数</span><br></pre></td></tr></table></figure>
 
 <h5 id="2-项目启动"><a href="#2-项目启动" class="headerlink" title="2.项目启动"></a>2.项目启动</h5><p>首先，我们刚刚创建了一个app，然后我们现在需要对其进行注册，这样才可以使用它（setting.py）：</p>
-<style>.uzslvipfwueu{}</style><img src="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/1.png" class="lazyload" data-srcset="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="uzslvipfwueu lazyload" alt="1">
+<style>.kjbgokcgqeep{}</style><img src="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/1.png" class="lazyload" data-srcset="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="kjbgokcgqeep lazyload" alt="1">
 
 <p>对应添加的名称可以到对应的app文件夹中的 <code>apps.py</code>文件中去查看：</p>
-<style>.pmmjmflobnxh{}</style><img src="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/2.png" class="lazyload" data-srcset="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="pmmjmflobnxh lazyload" alt="2">
+<style>.xselyrqrdyqq{}</style><img src="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/2.png" class="lazyload" data-srcset="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="xselyrqrdyqq lazyload" alt="2">
 
 <p>其次，我们需要到 <code>urls.py</code>文件中去编写对应的响应函数：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.contrib <span class="keyword">import</span> admin</span><br><span class="line"><span class="keyword">from</span> django.urls <span class="keyword">import</span> path</span><br><span class="line"><span class="keyword">from</span> app01 <span class="keyword">import</span> views <span class="comment"># 引用app中编写好的函数</span></span><br><span class="line">urlpatterns = [</span><br><span class="line">    <span class="comment">#path(&#x27;admin/&#x27;, admin.site.urls),</span></span><br><span class="line">    path(<span class="string">&#x27;index/&#x27;</span>,views.index), <span class="comment"># 前面的一部分是路径，而后面一部分就是对应的函数</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
@@ -2803,13 +2803,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：615 字</p>
+      <p>615 words</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：2 分钟</p>
+      <p>2 min</p>
     </a>
   </div>
 
@@ -2829,18 +2829,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2025/02/09/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>学习资料</p>
+      
+        <a class='next' href='/2025/02/09/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/'>
+          <p class='title'>学习资料<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>我为保密管理专业的uu们准备的学习资料大全，快看这里！（当然其他uu也是欢迎参观🤗）
 
 
 同样是保密管理专业的uu们，你们好呀！在大三的寒假里，我利用空闲时间整理了我上大学至今的所有资料供大家...</p>
-        </a>
-      
-      
-        <a class='next' href='/2025/02/08/hello-world/'>
-          <p class='title'>Hello World<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
         </a>
       
     </div>
@@ -3020,26 +3015,26 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
       
     
       
         
-          <div><p><span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+          <div><p>本站总访问量为<span id="busuanzi_value_site_pv"> <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> </span>次 访客数为<span id="busuanzi_value_site_uv"> <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> </span>人</p>
 </div>
         
       
     
       
-        本站使用
+        Use
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.8.0" target="_blank" class="codename">Volantis</a>
-        作为主题
+        as theme
       
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © since 2017 XXX</a></p>
+        <p><a href="/">Copyright © since 2025-2030 </a></p>
 
         </div>
       
