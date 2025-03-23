@@ -1792,7 +1792,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1742738786390),
+    lastupdate: new Date(1742740120245),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","lastupdate","webinfo"],
       for_post: ["toc"],
@@ -2701,10 +2701,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">├── app01</span><br><span class="line">|   ├── __init__.py</span><br><span class="line">|	├── admin.py	【固定，不用动】django默认提供后台管理</span><br><span class="line">|	├── apps.py		【固定，不用动】app启动类</span><br><span class="line">|	├── migrations	【固定，不用动】数据库变更记录</span><br><span class="line">|	|	└── __init__.py</span><br><span class="line">|	├── models.py	【重要】对数据库进行操作</span><br><span class="line">|	├── tests.py	【固定，不用动】单元测试</span><br><span class="line">|	├── views.py	【重要】函数</span><br></pre></td></tr></table></figure>
 
 <h5 id="2-项目启动"><a href="#2-项目启动" class="headerlink" title="2.项目启动"></a>2.项目启动</h5><p>首先，我们刚刚创建了一个app，然后我们现在需要对其进行注册，这样才可以使用它（setting.py）：</p>
-<style>.ovonyxdwejdn{}</style><img src="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/1.png" class="lazyload" data-srcset="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="ovonyxdwejdn lazyload" alt="1">
+<style>.xsexxnuheyuq{}</style><img src="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/1.png" class="lazyload" data-srcset="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="xsexxnuheyuq lazyload" alt="1">
 
 <p>对应添加的名称可以到对应的app文件夹中的 <code>apps.py</code>文件中去查看：</p>
-<style>.scpsxrvtvsjp{}</style><img src="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/2.png" class="lazyload" data-srcset="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="scpsxrvtvsjp lazyload" alt="2">
+<style>.fewjpohjxdmc{}</style><img src="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/2.png" class="lazyload" data-srcset="/2025/02/09/django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="fewjpohjxdmc lazyload" alt="2">
 
 <p>其次，我们需要到 <code>urls.py</code>文件中去编写对应的响应函数：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> django.contrib <span class="keyword">import</span> admin</span><br><span class="line"><span class="keyword">from</span> django.urls <span class="keyword">import</span> path</span><br><span class="line"><span class="keyword">from</span> app01 <span class="keyword">import</span> views <span class="comment"># 引用app中编写好的函数</span></span><br><span class="line">urlpatterns = [</span><br><span class="line">    <span class="comment">#path(&#x27;admin/&#x27;, admin.site.urls),</span></span><br><span class="line">    path(<span class="string">&#x27;index/&#x27;</span>,views.index), <span class="comment"># 前面的一部分是路径，而后面一部分就是对应的函数</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
@@ -2841,21 +2841,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2025/02/11/Django%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Django学习笔记二</p>
-          <p class='content'>这部分主要是关于Django中ORM是如何操作数据库中的表。
-
-
-1、ORM链接数据库我们在python中可以使用很多方法来操作我们的数据库，比如可以使用pymysql；但是我们正在使用Djan...</p>
-        </a>
-      
-      
-        <a class='next' href='/2025/02/09/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/'>
-          <p class='title'>学习资料<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+        <a class='prev' href='/2025/02/09/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>学习资料</p>
           <p class='content'>我为保密管理专业的uu们准备的学习资料大全，快看这里！（当然其他uu也是欢迎参观🤗）
 
 
 同样是保密管理专业的uu们，你们好呀！在大三的寒假里，我利用空闲时间整理了我上大学至今的所有资料供大家...</p>
+        </a>
+      
+      
+        <a class='next' href='/2025/02/08/hello-world/'>
+          <p class='title'>Hello World<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
         </a>
       
     </div>
